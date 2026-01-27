@@ -12,11 +12,10 @@ body {
 
 .navbar {
     position: sticky;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    background-color: #ec3950;
     top: 0;
     z-index: 1000;
-
+    background-color: #ec3950;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -66,8 +65,10 @@ body {
     }
     .nav-menu{
         flex-direction: column;
+        width: 100%;
     }
     .nav-link{
         width: 100%;
+        text-align: left;
     }
 }

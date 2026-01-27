@@ -1,0 +1,84 @@
+
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    justify-content: center;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.trainer-card {
+    background-color: #fff; 
+    color: #000;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.trainer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trainer-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.trainer-name {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.trainer-region,
+.trainer-badges {
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+
+.trainer-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.status-active {
+    background-color: #28a745; 
+}
+
+.status-champion {
+    background-color: #ffc107; 
+}
+
+@media screen and (max-width: 900px) {
+    .trainers-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .trainer-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
